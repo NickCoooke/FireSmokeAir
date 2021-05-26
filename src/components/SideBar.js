@@ -17,11 +17,11 @@ export default function Example() {
   
         <Offcanvas show={show} onHide={handleClose}>
           <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+            <Offcanvas.Title>Local Data</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
+            This is where we are going to display the API results.
+            Format will depend on results we gather. 
           </Offcanvas.Body>
         </Offcanvas>
       </>
