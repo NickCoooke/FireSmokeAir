@@ -1,19 +1,40 @@
 
-import Search from './components/Search';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import './styles/App.css';
 
-function App() {
+
+import Map from './components/Map';
+//import TopBar from './components/TopBar';
+import Search from './components/Search';
+import SideBar from './components/SideBar'
+
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header class='p-3 bg-dark text-white'>
-        <div className="container">
-          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <h2> Fire Smoke Air: An Air Quality Dashboard</h2>
+      <Container fluid>
+        <Row>
+          <Col xs={2}>
+            home button
+          </Col>
+          <Col xs={8}>
             <Search />
-          </div>
-        </div>
-      </header>
-    </div>
+            Search Bar 
+          </Col>
+          <Col xs={2}>
+            <SideBar />
+          </Col>
+        </Row>
+      <Row>
+        <Col>
+          <h2> MAP </h2>
+          <Map />
+        </Col>
+      </Row>
+      </Container>
   );
 }
-
-export default App;
