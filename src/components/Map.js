@@ -1,9 +1,58 @@
+import React, { useRef, useEffect, useState } from 'react';
+import mapboxgl from 'mapbox-gl';
+import '../styles/Map.css'
+
+mapboxgl.accessToken =
+    'pk.eyJ1IjoidG9hc3RlZGdyZWF0ZnJ1aXQiLCJhIjoiY2tueHVrc2RvMG9pbzJzbzg1d2QzbjJjbCJ9.WZZZmLABakfNWj1BLT7yEg'
+const Map = () => {
+  const mapContainerRef = useRef(null);
+
+  const [lng, setLng] = useState(5);
+  const [lat, setLat] = useState(34);
+  const [zoom, setZoom] = useState(1.5);
+
+  // Initialize map when component mounts
+  useEffect(() => {
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current,
+      style: 'mapbox://styles/mapbox/dark-v10',
+      center: [lng, lat],
+      zoom: zoom
+    });
+
+    // Add navigation control (the +/- zoom buttons)
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+
+    map.on('move', () => {
+      setLng(map.getCenter().lng.toFixed(4));
+      setLat(map.getCenter().lat.toFixed(4));
+      setZoom(map.getZoom().toFixed(2));
+    });
+
+    // Clean up on unmount
+    return () => map.remove();
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  return (
+    <div>
+      <div className='sidebarStyle'>
+        <div>
+          Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+        </div>
+      </div>
+      <div className='map-container' ref={mapContainerRef} />
+    </div>
+  );
+};
+
+export default Map;
 
 
-export default function Map () {
-    return <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic7.depositphotos.com%2F1252474%2F745%2Fi%2F950%2Fdepositphotos_7459300-stock-photo-old-treasure-map.jpg&f=1&nofb=1"
-                alt="A simple Stand-in Map"
-                width="400px"
-                height="400px"
-            />
-}
+/*
+Good Tutorials
+-   Mapbox with react=  https://dev.to/laney/react-mapbox-beginner-tutorial-2e35
+-   Location Search=    https://docs.mapbox.com/help/tutorials/local-search-geocoding-api/
+
+Sources: https://github.com/mapbox/mapbox-react-examples
+
+*/
