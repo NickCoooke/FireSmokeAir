@@ -16,11 +16,12 @@ export default function AirNow() {
     if (err) {
       console.log(err)
       return "We have a problem"
+    }
     if (observations) {
       console.log(observations);
       return observations;
     }
-  });
-
-
+    }
+  );
+  return obj
 }

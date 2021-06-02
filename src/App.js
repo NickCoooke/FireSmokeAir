@@ -9,7 +9,7 @@ import './styles/App.css';
 import Map from './components/Map';
 import TopBar from './components/TopBar';
 import InfoBox from './components/InfoBox';
-import AirNow from './adapters/AirNow';
+//import AirNow from './adapters/AirNowAPI';
 
 class App extends Component {
 state = {
@@ -34,7 +34,7 @@ state = {
     }
     return body;
   };
-
+  
   render() {
     return (
       <>
@@ -61,18 +61,6 @@ state = {
   }
 }
 export default App;
-
-const loadAirNow = () => {
-  console.log(AirNow())
-  /*
-    .then(function(response) {
-      console.log(response);
-    })
-    .catch(function(error){
-      console.log(error);
-    })
-    */
-}
 
 /* Sources
 How to handle secret Keys
