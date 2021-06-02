@@ -40,8 +40,6 @@ state = {
       <>
         <h1 className="App-title">Backend Connection: {this.state.data}</h1>
       <Container fluid>
-        <Row>
-        </Row>
         <Row >
           <TopBar />
         </Row>
