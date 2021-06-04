@@ -16,8 +16,8 @@
     ]
   },
   {
-    "title": "Intro to Air Quality Index",
-    "short": "A quick guide on what we're reporting",
+    "title": "Intro to AQI",
+    "short": "Air Quality Index tutorial",
     "description": "This is the EPA's guide on AQI, or Air Quality index. It's a 3 minute read into major pollutants, health risks for danger levels, and more.",
     "url": [
       "https://www.airnow.gov/aqi/aqi-basics/"
@@ -31,7 +31,7 @@
   },
   {
     "title": "Purple Air",
-    "short": "Private air quality data dashboard",
+    "short": "A beautiful map off of private sensors",
     "description": "Purple Air is a private company that sells air quality sensors to people and companies interested in recording their local air quality. They also run a paid API service that allows programmers to build dashboards like this one off of the data recorded on Purple Air sensors. Weather Underground states that PurpleAir PA-II is the best devise for most people to track the deadliest type of air pollution",
     "url": [
       "https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#1/18.1/-30"
@@ -47,7 +47,7 @@
   },
   {
     "title": "Windy.com",
-    "short": "A beautiful interactive map to give insight into how smoke might be moving",
+    "short": "A beautiful map",
     "description": "Windy.com is an interactive map based weather dashboard that allows users to select an from an impressive amount of layers to build any map they want. Windy.com is famous for including particle animation to show wind and waves.  ",
     "url": [
       "https://www.windy.com"
@@ -62,7 +62,7 @@
   },
   {
     "title": "National Wildfire Coordinating Group",
-    "short": "This organization coordinates other national land management services to fight fires",
+    "short": "Informative website on national fires",
     "description": "This is a great resource to access primary sourced data, photos, and tools. It is also a great resource for people interested in being a Wildland firefighter or looking to submit ideas on how to fight fires.  ",
     "url": [
       "https://maps.nwcg.gov/",
@@ -78,7 +78,7 @@
   },
   {
     "title": "Fire, Weather, & Avalanche Center",
-    "short": "An interactive map for current fire, weather, and avalanche danger",
+    "short": "A real time interactive map",
     "description": "This is an Oregon 501(c)(3) focuses on providing high quality tools for people looking to go into the wilderness. Their main drive the name of their org.",
     "url": [
       "https://www.fireweatheravalanche.org/fire/",
@@ -93,31 +93,25 @@
   },
   {
     "title": "CDC: Wildfire Smoke and COVID-19",
-    "short": "The US Center for Desire Control on how to prepare for and live through fires and COVID",
-    "description": "This is an Oregon 501(c)(3) focuses on providing high quality tools for people looking to go into the wilderness. Their main drive the name of their org.",
-    "url": [
-      "https://www.fireweatheravalanche.org/fire/",
-      "https://www.fireweatheravalanche.org/about"
-    ],
-    "tags": [
-      "Private",
-      "Fire",
-      "Map",
-      "Real Time"
-    ]
+    "short": "From building clean rooms to commercial HVAC",
+    "description": "",
+    "url": [],
+    "tags": []
   },
   {
     "title": "Protect AQI inside for wildfire smoke",
-    "short": "Create a Clean Room to Protect Indoor Air Quality During a Wildfire",
+    "short": "How to keep the smoke outside",
     "description": "This is a EPA guide on how and why to create a clean room to minimize the effects of smoke on our health. Generally, make a cold room in your home where you can continuously filter the air",
     "url": "https://www.epa.gov/indoor-air-quality-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire"
   },
   {
     "title": "DIY air filter for the handy people",
+    "short": "Moderately guide to make a budget air filtering system",
     "url": "https://blog.mykukun.com/diy-how-to-make-a-budget-air-purifier-for-your-home/"
   },
   {
-    "title": "LA times Q&A on AQI",
+    "title": "LA Times Q&A on AQI",
+    "short": "General resources on surviving smoke from LA",
     "url": "https://www.latimes.com/environment/story/2020-09-11/your-questions-about-air-quality-answered"
   }
 ]

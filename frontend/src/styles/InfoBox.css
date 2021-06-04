@@ -1,6 +1,8 @@
+#InfoBox{
+}
 .myCard {
   margin: 2px;
-  width: 18rem;
+  max-width: 20rem;
   max-height: 20rem;
 }
 .myLink {

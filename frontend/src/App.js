@@ -9,39 +9,41 @@ import './styles/App.css';
 import Map from './components/Map';
 import TopBar from './components/TopBar';
 import InfoBox from './components/InfoBox';
-import AirNow from './adapters/AirNowAPI';
+//import AirNow from './adapters/AirNowAPI';
 
 class App extends Component {
-state = {
-    data: null
-  };
+/************ Connecting to Express backend ******/
+//state = {
+//    data: null
+//  };
+//  
+//  componentDidMount() {
+//    this.callBackendAPI()
+//      .then(res => {
+//        console.log(res.express);
+//        this.setState({data: res.express })
+//      })
+//      .catch(err => console.log(err));
+//  }
+//    // fetching the GET route from the Express server which matches the GET route from server.js
+//  callBackendAPI = async () => {
+//    const response = await fetch('/express_backend');
+//    const body = await response.json();
+//
+//    if (response.status !== 200) {
+//      throw Error(body.message) 
+//    }
+//    return body;
+//  };
+//  loadAirNow() {
+//   let data = AirNow();
+//}
 
-  componentDidMount() {
-    this.callBackendAPI()
-      .then(res => {
-        console.log(res.express);
-        this.setState({data: res.express })
-      })
-      .catch(err => console.log(err));
-  }
-    // fetching the GET route from the Express server which matches the GET route from server.js
-  callBackendAPI = async () => {
-    const response = await fetch('/express_backend');
-    const body = await response.json();
 
-    if (response.status !== 200) {
-      throw Error(body.message) 
-    }
-    return body;
-  };
-  loadAirNow() {
-    let data = AirNow();
-  }
   render() {
     return (
       <>
-        <h1 className="App-title">Backend Connection: {this.state.data}</h1>
-      <Container fluid>
+      <Container fluid className='btn-dark'>
         <Row >
           <TopBar />
         </Row>
@@ -51,7 +53,7 @@ state = {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col >
           <InfoBox />
         </Col>
       </Row>

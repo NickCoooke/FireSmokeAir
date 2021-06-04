@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../styles/Map.css'
+import aqiToColor from '../resources/colors';
+import AirNowData from '../resources/AIRNOW_102020.json'
 
 
 /******************MAP *************************/
@@ -33,11 +35,12 @@ const Map = () => {
     });
 
   // add markers to map
-let marker = new mapboxgl.Marker({
-  color: "#006E33",
-}).setLngLat([-122, 45.5])
-  .addTo(map);
-
+  AirNowData.map(data => 
+    new mapboxgl.Marker({
+      color: aqiToColor(data.AQI)
+    }).setLngLat([data.Longitude, data.Latitude])
+      .addTo(map)
+  );
 
   // Clean up on unmount
     return () => map.remove();
