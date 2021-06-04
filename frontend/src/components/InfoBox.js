@@ -11,18 +11,19 @@ import '../styles/InfoBox.css';
 
 const InfoBox = () => {
     return (
-        <Container id="InfoBox" className="bg-dark">
+        <Container id="InfoBox" className="bg-dark justify-content-center" >
             <Row>
-                <h2 className="text-center">Wild Fire Health and Safety Resources </h2>
+                <h2 className="text-center">Wild Fire Health and Safety Websites</h2>
                 {entries.map(entry => (
-                    <Card className="myCard" md='auto'> 
-                        <Card.Title className="text-black">{entry.title}</Card.Title>
+                    <Card className="myCard text-dark" md='auto' lg='auto'> 
+                        <Card.Header>
+                            <a myLink href={entry.url[0]} 
+                                className="lead rounded text-center">{entry.title} </a>
+                        </Card.Header>
                         <Card.Subtitle className="mb-2">
+                            <br />
                             {entry.short}
                         </Card.Subtitle>
-                        <Card.Link href={entry.url[0]} className="btn-warning rounded border" >
-                            {entry.title}
-                        </Card.Link>
                     </Card>
                 ))}
             </Row>

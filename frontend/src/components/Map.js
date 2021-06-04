@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../styles/Map.css'
 import aqiToColor from '../resources/colors';
-import AirNowData from '../resources/AIRNOW_102020.json'
+import AirNowData from '../resources/AirNowAPI_20212004162030.json'
 
 
 /******************MAP *************************/
