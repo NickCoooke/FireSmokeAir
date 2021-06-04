@@ -9,7 +9,7 @@ import './styles/App.css';
 import Map from './components/Map';
 import TopBar from './components/TopBar';
 import InfoBox from './components/InfoBox';
-//import AirNow from './adapters/AirNowAPI';
+import AirNow from './adapters/AirNowAPI';
 
 class App extends Component {
 state = {
@@ -34,7 +34,9 @@ state = {
     }
     return body;
   };
-  
+  loadAirNow() {
+    let data = AirNow();
+  }
   render() {
     return (
       <>

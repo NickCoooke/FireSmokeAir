@@ -2,8 +2,36 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../styles/Map.css'
 
+let geojson = {
+  type: 'FeatureCollection',
+  features: [{
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-77.032, 38.913]
+    },
+    properties: {
+      title: 'Mapbox',
+      description: 'Washington, D.C.'
+    }
+  },
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [-122.414, 37.776]
+    },
+    properties: {
+      title: 'Mapbox',
+      description: 'San Francisco, California'
+    }
+  }]
+};
+
+/******************MAP *************************/
 mapboxgl.accessToken =
     'pk.eyJ1IjoidG9hc3RlZGdyZWF0ZnJ1aXQiLCJhIjoiY2tueHVrc2RvMG9pbzJzbzg1d2QzbjJjbCJ9.WZZZmLABakfNWj1BLT7yEg'
+
 const Map = () => {
   const mapContainerRef = useRef(null);
 
@@ -29,7 +57,14 @@ const Map = () => {
       setZoom(map.getZoom().toFixed(2));
     });
 
-    // Clean up on unmount
+  // add markers to map
+let marker = new mapboxgl.Marker({
+  color: "#006E33",
+}).setLngLat([-122, 45.5])
+  .addTo(map);
+
+
+  // Clean up on unmount
     return () => map.remove();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
