@@ -1,5 +1,5 @@
 # SMOKE FIRE AIR: a Wildfire Safety Dashboard 
-----------------------------------------------------------
+This application pulls data from the US EPA's [Air Now API](https://docs.airnowapi.org/) and renders it on an interactive map with [Mapbox](https://docs.mapbox.com/). It built on Node.js using yarn as package manager and React.
 ## Run Locally
 1. Download the project from github
 ```bash 
@@ -7,14 +7,14 @@ git clone https://github.com/NickCoooke/FireSmokeAir
 ```
 2. Install the project dependencies 
 ```bash 
-cd FireSmokeAir
+cd FireSmokeAir/frontend
 yarn install
 ```
 3. Launch the development server
 ```bash
 yarn start
 ```
-
+----------------------------------------------------------------------------
 Here is the agenda for the development of FireSmokeAir`
 # To Do
 - add AIRNOW data as a source to map
