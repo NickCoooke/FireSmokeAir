@@ -1,4 +1,4 @@
-# SMOKE FIRE AIR: a Wildfire Safety Dashboard 
+# SMOKE FIRE AIR: a wildfire wafety dashboard 
 This application pulls data from the US EPA's [Air Now API](https://docs.airnowapi.org/) and renders it on an interactive map with [Mapbox](https://docs.mapbox.com/). It built on Node.js using yarn as package manager and React.
 ## Run Locally
 1. Download the project from github
