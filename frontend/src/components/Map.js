@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import '../styles/Map.css'
-import aqiToColor from '../resources/colors';
-import AirNowData from '../resources/AirNowAPI_20212004162030.json'
+//import aqiToColor from '../resources/colors';
+//import AirNowData from '../resources/AirNowAPI_20212004162030.json'
+import Layer from '../adapters/mapboxLayer'
 
 
 /******************MAP *************************/
@@ -14,7 +15,7 @@ const Map = () => {
 
   const [lng, setLng] = useState(-123);
   const [lat, setLat] = useState(45);
-  const [zoom, setZoom] = useState(7);
+  const [zoom, setZoom] = useState(5);
 
   // Initialize map when component mounts
   useEffect(() => {
@@ -33,20 +34,8 @@ const Map = () => {
       setLat(map.getCenter().lat.toFixed(4));
       setZoom(map.getZoom().toFixed(2));
     });
-
-  // add markers to map
-  AirNowData.map(data => 
-    new mapboxgl.Marker({
-      color: aqiToColor(data.AQI)
-    }).setLngLat([data.Longitude, data.Latitude])
-      .addTo(map)
-  );
-
-  // Clean up on unmount
-    return () => map.remove();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-  return (
+  });
+ return (
     <div>
       <div className='sidebarStyle'>
         <div>
@@ -56,13 +45,15 @@ const Map = () => {
       <div className='map-container' ref={mapContainerRef} />
     </div>
   );
-};
+}
 
 export default Map;
 
 
 /*
 Good Tutorials
+-   Load Large Datasets = https://docs.mapbox.com/help/troubleshooting/working-with-large-geojson-data/
+-   Using Layers on Mapbox= https://www.lostcreekdesigns.co/writing/a-complete-guide-to-sources-and-layers-in-react-and-mapbox-gl-js/
 -   Mapbox with react=  https://dev.to/laney/react-mapbox-beginner-tutorial-2e35
 -   Location Search=    https://docs.mapbox.com/help/tutorials/local-search-geocoding-api/
 

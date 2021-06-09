@@ -1,3 +1,5 @@
+// Fetch AirNow Data (Currently Inactive. We are using ./resources/AIRNOW*)
+
 const airnow = require('airnow');
 
 const client = airnow({apiKey: '5B53AAAB-44C7-428F-9B05-38B15C0D0E12'});

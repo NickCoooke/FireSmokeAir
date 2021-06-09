@@ -1,5 +1,28 @@
+# SMOKE FIRE AIR:
+an Air Quality and Active Fire Dashboard 
+------------------------------------------------------------
+## Run Locally
+1. Download the project from github
+```bash 
+git clone https://github.com/NickCoooke/FireSmokeAir
+```
+2. Install the project dependencies 
+```bash 
+cd FireSmokeAir
+yarn install
+```
+3. Launch the development server
+```bash
+yarn start
+```
+
 Here is the agenda for the development of FireSmokeAir`
 # To Do
+- add AIRNOW data as a source to map
+- render that source as a layer (circle)
+- render another later ontop as a circle
+- parse airnow data into geojson
+
 
 ## InfoBox
 - Fix centering on cards

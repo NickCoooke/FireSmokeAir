@@ -1,4 +1,5 @@
 //import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
@@ -9,7 +10,16 @@ import '../styles/InfoBox.css';
 // We are going to import JSON below and run a script rendering 
 // them into a flexbox list. Hopefully we can allow a filter via tag
 
-const InfoBox = () => {
+const InfoBox = (props) => {
+    const [tags, setTags] = useState([]);
+
+        // Set the search tags from either props, or a component in here
+
+    useEffect(() => {
+        console.log(tags)
+        // update display upon tag change
+        // Order entries by tag
+    })
     return (
         <Container id="InfoBox" className="bg-dark justify-content-center" >
             <Row>
@@ -37,3 +47,4 @@ export default InfoBox;
  *  -> the widths don't match up between top bar and map
  *  -> The info box is hidden behind the map
  */
+
