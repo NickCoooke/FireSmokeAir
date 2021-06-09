@@ -1,6 +1,5 @@
-# SMOKE FIRE AIR:
-an Air Quality and Active Fire Dashboard 
-------------------------------------------------------------
+# SMOKE FIRE AIR: a Wildfire Safety Dashboard 
+----------------------------------------------------------
 ## Run Locally
 1. Download the project from github
 ```bash 
