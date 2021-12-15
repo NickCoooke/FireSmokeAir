@@ -11,14 +11,15 @@ const options = {
 }
 
 function OffCanvasExample({ name, ...props }) {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleTrigger = () => setShow(!show);
 
   return (
     <>
-      <Button variant="dark" onClick={handleShow}>
+      <Button variant="dark" onClick={handleTrigger}>
         <svg xmlns="http://www.w3.org/2000/svg" 
              width="32" 
              height="32" 
@@ -31,11 +32,16 @@ function OffCanvasExample({ name, ...props }) {
       </Button>
       <Offcanvas show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Welcome to FireSmoke Air \n
+                          (in development)</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          <p>  We are a website designed to help people stay appraised of the regional air quality during wildfire seasons and connect to powerful tools and resources.
+            Currently, we're working out some kinks with the map, continuing to deepen our knowlege on wildfires, and connecting folks to more, useful information.
+          </p>
+          <p> Thank you for stopping by! </p>
+          <p> Best, </p>
+          nicC
         </Offcanvas.Body>
       </Offcanvas>
     </>
