@@ -27,8 +27,8 @@ export default function TopBar () {
                     <Navbar.Collapse id="header-navbar">
                       <Nav className="mr-auto">
                         <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/about-us">Contact Us</Nav.Link>
-                        <Nav.Link href="/contact-us">About Us</Nav.Link>
+                        <Nav.Link href="/">Contact Us</Nav.Link>
+                        <Nav.Link href="/">About Us</Nav.Link>
                         <NavDropdown title="Filter" id="basic-nav-dropdown">
                           <NavDropdown.Item href="#action/Ozone">Ozone</NavDropdown.Item>
                           <NavDropdown.Item href="#action/PM25">PM2.5</NavDropdown.Item>
