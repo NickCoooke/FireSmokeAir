@@ -22,7 +22,7 @@ const InfoBox = (props) => {
     })
     return (
         <Container id="InfoBox" className="bg-dark justify-content-center" >
-            <Row>
+            <Row id="InfoBoxes">
                 <h2 className="text-center">Wild Fire Health and Safety Websites</h2>
                 {entries.map(entry => (
                     <Card className="myCard text-dark" md='auto' lg='auto'> 
@@ -41,10 +41,3 @@ const InfoBox = (props) => {
     );
 }
 export default InfoBox;
-
-/**************TODO ******************
- * 1. Configure Map to work in bootstrap grid
- *  -> the widths don't match up between top bar and map
- *  -> The info box is hidden behind the map
- */
-

@@ -11,10 +11,9 @@ const options = {
 }
 
 function OffCanvasExample({ name, ...props }) {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const handleTrigger = () => setShow(!show);
 
   return (

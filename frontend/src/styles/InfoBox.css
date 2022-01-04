@@ -1,5 +1,9 @@
-#InfoBox{
+
+#InfoBoxes {
   justify-content: center;
+  margin-top: 5px;
+  margin: 5px;
+  background-color: rbg(61,61,61);
 }
 .myCard {
   margin: 2px;
