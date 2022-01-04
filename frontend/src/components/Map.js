@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ReactMapGL, {GeolocateControl, Layer} from 'react-map-gl';
 import '../styles/Map.css';
-import * as aqiData from '../resources/AIRNOW_102020.json';
+//import * as aqiData from '../resources/AIRNOW_102020.json';
 
 
 /******************MAP *************************/
@@ -22,7 +22,7 @@ const Map = () => {
    height: '100%',
  }) 
 
- const _onViewportChange = viewport => setViewport({...viewport,transitionDuration: 40})
+ const _onViewportChange = viewport => setViewport({...viewport,transitionDuration: 400})
  return (
    <div className='map-container' >
      <ReactMapGL
@@ -34,11 +34,12 @@ const Map = () => {
        < GeolocateControl
          style={geolocationStyle}
        />
-       <Layer {...aqiData} id="aqiData102020" paint={{ 'fill-color': 'blue' }} />
      </ReactMapGL>
         </div>
   
  );
+ // insert right after geolocatControl
+  // <Layer {...aqiData} id="aqiData102020" paint={{ 'fill-color': 'blue' }} />
   
  
  /*(
