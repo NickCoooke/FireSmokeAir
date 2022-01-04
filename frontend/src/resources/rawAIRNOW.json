@@ -1,166 +1,164 @@
-{
-  "features": [
-    {
-      "Latitude": 45.52483,
-      "Longitude": -123.10554,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 37,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.528501,
-      "Longitude": -122.972398,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 34,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.4702,
-      "Longitude": -122.8159,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 24,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.768531,
-      "Longitude": -122.7721,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 37,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.39916,
-      "Longitude": -122.7455,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 25,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.5901,
-      "Longitude": -122.73762,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 40,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.5187,
-      "Longitude": -122.6881,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 21,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.558081,
-      "Longitude": -122.670985,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 32,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.51421,
-      "Longitude": -122.653294,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 47,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.496641,
-      "Longitude": -122.602877,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 39,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.47142,
-      "Longitude": -122.60147,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 48,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.25928,
-      "Longitude": -122.588151,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 11,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.64336,
-      "Longitude": -122.58737,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 13,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.5418,
-      "Longitude": -122.5795,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 20,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.562203,
-      "Longitude": -122.575624,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 17,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.4962,
-      "Longitude": -122.4834,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 27,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.863899,
-      "Longitude": -122.410889,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 17,
-      "Category": 1
-    },
-    {
-      "Latitude": 45.291413,
-      "Longitude": -122.332626,
-      "UTC": "2021-12-28T22:00",
-      "Parameter": "PM2.5",
-      "Unit": "UG/M3",
-      "AQI": 54,
-      "Category": 2
-    }
-  ]
-}
+[
+  {
+    "Latitude": 45.52483,
+    "Longitude": -123.10554,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 37,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.528501,
+    "Longitude": -122.972398,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 34,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.4702,
+    "Longitude": -122.8159,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 24,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.768531,
+    "Longitude": -122.7721,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 37,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.39916,
+    "Longitude": -122.7455,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 25,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.5901,
+    "Longitude": -122.73762,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 40,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.5187,
+    "Longitude": -122.6881,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 21,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.558081,
+    "Longitude": -122.670985,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 32,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.51421,
+    "Longitude": -122.653294,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 47,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.496641,
+    "Longitude": -122.602877,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 39,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.47142,
+    "Longitude": -122.60147,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 48,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.25928,
+    "Longitude": -122.588151,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 11,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.64336,
+    "Longitude": -122.58737,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 13,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.5418,
+    "Longitude": -122.5795,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 20,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.562203,
+    "Longitude": -122.575624,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 17,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.4962,
+    "Longitude": -122.4834,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 27,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.863899,
+    "Longitude": -122.410889,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 17,
+    "Category": 1
+  },
+  {
+    "Latitude": 45.291413,
+    "Longitude": -122.332626,
+    "UTC": "2021-12-28T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 54,
+    "Category": 2
+  }
+]

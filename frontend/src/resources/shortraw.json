@@ -1,0 +1,29 @@
+[
+  {
+    "Latitude": 48.2867,
+    "Longitude": -124.6203,
+    "UTC": "2020-09-14T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 308,
+    "Category": 6
+  },
+  {
+    "Latitude": 48.2867,
+    "Longitude": -124.6203,
+    "UTC": "2020-09-14T22:00",
+    "Parameter": "OZONE",
+    "Unit": "PPB",
+    "AQI": 29,
+    "Category": 1
+  },
+  {
+    "Latitude": 48.366058,
+    "Longitude": -124.610046,
+    "UTC": "2020-09-14T22:00",
+    "Parameter": "PM2.5",
+    "Unit": "UG/M3",
+    "AQI": 188,
+    "Category": 4
+  }
+]

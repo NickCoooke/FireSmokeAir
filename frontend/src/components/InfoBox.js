@@ -16,7 +16,7 @@ const InfoBox = (props) => {
         // Set the search tags from either props, or a component in here
 
     useEffect(() => {
-        console.log(tags)
+        // console.log(tags)
         // update display upon tag change
         // Order entries by tag
     })

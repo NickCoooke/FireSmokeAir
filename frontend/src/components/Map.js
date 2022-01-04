@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ReactMapGL, {GeolocateControl, Layer} from 'react-map-gl';
 import jsgeoda from "jsgeoda";
+//import DeckGL from '@deck.gl/react';
 import '../styles/Map.css';
+import array2geostream from '../adapters/array2geoStream';
 //import * as aqiData from '../resources/AIRNOW_102020.json';
 
 
@@ -24,13 +26,12 @@ const Map = () => {
     height: '100%',
   })
 
-  /*
   // Loading Data into the map
 
-  const data1 = 'frontend/src/resources/AIRNOW_102020.json'  
-  const data2 = 'frontend/src/resources/sample.geojson'
-
-  const data = data2
+  const data1 = "frontend/src/resources/geojson.json";
+  const rawdata = "frontend/src/resources/shortraw.json";
+  const sampleJSON = "https://jsonplaceholder.typicode.com/users";
+  const data = rawdata;
   useEffect(() => {
     jsgeoda.New().then((geoda) => {
       loadSpatialData(geoda);
@@ -39,12 +40,17 @@ const Map = () => {
 
   const loadSpatialData = (geoda) => {
     fetch(data)
-      .then((res) => res.arrayBuffer())
-      .then((data) => {
-        const nat = geoda.readGeoJSON(data);
-        console.log(nat)
-      })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res)
+      });
+      //{
+        //const nat = geoda.readGeoJSON(data);
+        //console.log(nat)
+      //})
   }
+
+  /*
 
 
   //const API = 'https://jsonplaceholder.typicode.com/posts';
@@ -76,7 +82,6 @@ const Map = () => {
           style={geolocationStyle}
         />
       </ReactMapGL>
-      <button onClick={fetchPost}>localFetch</button>
     </div>
 
   );
@@ -100,6 +105,7 @@ export default Map;
 /*
 Good Tutorials
   react-map-gl
+-   jsgeoda deckgl tut  = https://xunli.gitbook.io/jsgeoda/user-guide/hello-jsgeoda
 -   react-map-gl docs   = https://visgl.github.io/react-map-gl/docs
 -   intro tutorial vid  = https://www.youtube.com/watch?v=JJatzkPcmoI
 -   intro page          = https://blog.logrocket.com/how-to-use-mapbox-gl/
