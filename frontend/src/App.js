@@ -10,7 +10,7 @@ import Map from './components/Map';
 import TopBar from './components/TopBar';
 import InfoBox from './components/InfoBox';
 import ContactUs from './components/ContactUs';
-import Posts from './components/apiPost';
+//import Posts from './components/apiPost';
 //import AirNow from './adapters/AirNowAPI';
 
 class App extends Component {
