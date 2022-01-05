@@ -1,9 +1,9 @@
-import React, { useRef, useEffect, useState } from 'react';
-import ReactMapGL, {GeolocateControl, Layer} from 'react-map-gl';
+import React, { useEffect, useState } from 'react';
+import ReactMapGL, {GeolocateControl} from 'react-map-gl';
 import jsgeoda from "jsgeoda";
 //import DeckGL from '@deck.gl/react';
 import '../styles/Map.css';
-import array2geostream from '../adapters/array2geoStream';
+//import array2geostream from '../adapters/array2geoStream';
 //import * as aqiData from '../resources/AIRNOW_102020.json';
 
 
@@ -31,19 +31,27 @@ const Map = () => {
   const data1 = "frontend/src/resources/geojson.json";
   const rawdata = "frontend/src/resources/shortraw.json";
   const sampleJSON = "https://jsonplaceholder.typicode.com/users";
-  const data = rawdata;
+  const array = "frontend/src/resources/array.json"
+  const sampleGeoJSON = "https://gist.github.com/wavded/1200773?short_path=99c1af9"
+
+  const url = data1;
+
   useEffect(() => {
+    loadSpatialData();
+    /*
     jsgeoda.New().then((geoda) => {
       loadSpatialData(geoda);
     })
+    */
   })
 
-  const loadSpatialData = (geoda) => {
-    fetch(data)
+  const loadSpatialData = () => {
+    fetch(url)
       .then((res) => res.json())
       .then((res) => {
-        console.log(res)
-      });
+        console.log("Loaded Data: ", res)
+      })
+    .catch(error => console.error("error loading map data: ", error));
       //{
         //const nat = geoda.readGeoJSON(data);
         //console.log(nat)
